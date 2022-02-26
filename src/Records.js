@@ -10,7 +10,7 @@ function Records() {
     const [error, setError] = useState();
 
     useEffect(() => {
-        fetch("http://localhost:8080/records")
+        fetch("https://record-store-java-back-end.herokuapp.com/records")
             .then(response => response.json())
             .then(result => setRecords(result))
             .catch(console.log);
